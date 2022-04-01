@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
+    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+  </head>
+  <body style="margin: 0; overflow: hidden">
+    <a-scene
+      embedded
+      loading-screen="enabled: false;"
+      arjs="sourceType: webcam; debugUIEnabled: false;"
+    >
+      <a-image
+        src="https://cdn.glitch.global/9e122b05-0cdc-40d5-a05b-d3910353b171/pink-light.jpg?v=1647517807547"
+        look-at="[gps-camera]"
+        scale="30 30 30"
+        gps-entity-place="latitude: 26.7871; longitude: 80.9788"
+      ></a-image>
+      <a-image
+        src="https://cdn.glitch.global/9e122b05-0cdc-40d5-a05b-d3910353b171/green-light.jpg?v=1647514490595"
+        look-at="[gps-camera]"
+        scale="30 30 30"
+        gps-entity-place="latitude: 26.7871; longitude: 80.9771"
+      ></a-image>
+      <a-image
+        src="https://cdn.glitch.global/9e122b05-0cdc-40d5-a05b-d3910353b171/yellow-light.jpg?v=1647517936883"
+        look-at="[gps-camera]"
+        scale="30 30 30"
+        gps-entity-place="latitude: 26.7881999; longitude: 80.9771"
+      ></a-image>
+      <a-image
+        src="https://cdn.glitch.global/9e122b05-0cdc-40d5-a05b-d3910353b171/yellow-light.jpg?v=1647517936883"
+        look-at="[gps-camera]"
+        scale="30 30 30"
+        gps-entity-place="latitude: 26.7881999; longitude: 80.9791"
+      ></a-image>
+      <a-camera
+        gps-camera="simulateLatitude: 26.7875; simulateLongitude: 80.9776"
+        rotation-reader
+      ></a-camera>
+    </a-scene>
+  </body>
+</html>
